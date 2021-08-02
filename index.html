@@ -1,0 +1,102 @@
+<div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script>
+    document.getElementById("done").style.display = "none";
+    function myfunction(){
+        document.getElementById("payment").style.display = "none";
+        document.getElementById("done").style.display = "block";
+    }
+    
+</script>
+
+<style>
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  background-color: #00b44b;
+}
+.effect.effect-5:before {
+  content: "✔️";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 30px;
+}
+.effect.effect-5:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+#done{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+</style>
+
+<div id="payment">
+    <center>
+        <h2><b>Scan With Any Wallet App To Continue</b></h2>
+    </center>
+    <center>
+    <img src ="https://miro.medium.com/max/1000/0*BIy_CblCTVoOl5Zg" width="40%"><br>
+    <img src="https://cdn.discordapp.com/attachments/853232213100462141/871733278120493086/unknown.png" width="40%"><br>
+    <img src ="https://miro.medium.com/max/1000/0*BIy_CblCTVoOl5Zg" width="40%">
+    </center>
+    <center>
+        <br>
+        <br>
+        <a class="effect effect-5" onclick="myfunction()" title="paid">I Have Paid</a>
+        <p>Your Payment will be Verified!.</p>
+    </center>
+</div>
+<div id="done" style="display: none;">
+    <center>
+    <img src ="https://image.flaticon.com/icons/png/128/190/190411.png" width="10%">
+    <br>
+    <H2>Thank For Your Payment</H2>
+    </center>
+    <p>Check Your Email For All Updated Status , Also Your Invoice Will Be Sent To Your Email Once Our Support Team Verify The Payment. For a Faster Reply Create and Ticket on <a href="https://discord.gg/minenodes" target="_blank">Discord</a></p>
+    <br>
+    <br>
+    <center>
+    <p>It May Take 24hrs To Review Your Payment And Allocate Server Space.</p>
+    <p>©️Copyrighted 2021 MineNodes.xyz</p>
+</center>
+    
+</div>
+</div>
